@@ -25,7 +25,7 @@
   <link rel="preload"
     href="https://fonts.googleapis.com/css?family=Open Sans:bold,regular|Montserrat:bold,regular|Roboto Slab:bold,regular&display=swap"
     as="style" onload="this.onload = null;this.rel = 'stylesheet';">
-  <link rel="preload" href="https://w.ladicdn.com/v2/source/ladipage.min.js?v=1590985316482" as="script">
+  <link rel="preload" href="https://w.ladicdn.com/v2/source/ladipage.min.js?v=1591931704069" as="script">
   <style id="style_ladi" type="text/css">
     a,
     abbr,
@@ -658,11 +658,23 @@
       overflow: hidden
     }
 
+    .ladi-frame .ladi-frame-background {
+      height: 100%;
+      width: 100%;
+      pointer-events: none
+    }
+
     .ladi-banner {
       position: absolute;
       width: 100%;
       height: 100%;
       overflow: hidden
+    }
+
+    .ladi-banner .ladi-banner-background {
+      height: 100%;
+      width: 100%;
+      pointer-events: none
     }
 
     #SECTION_POPUP .ladi-container {
@@ -699,6 +711,12 @@
       position: absolute;
       width: 100%;
       height: 100%
+    }
+
+    .ladi-popup .ladi-popup-background {
+      height: 100%;
+      width: 100%;
+      pointer-events: none
     }
 
     .ladi-countdown {
@@ -1693,7 +1711,7 @@
         background-repeat: no-repeat;
       }
 
-      #POPUP108>.ladi-popup {
+      #POPUP108>.ladi-popup>.ladi-popup-background {
         background-color: rgb(194, 163, 2);
       }
 
@@ -1777,7 +1795,7 @@
         margin: auto;
       }
 
-      #POPUP119>.ladi-popup {
+      #POPUP119>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -1846,7 +1864,7 @@
 
       #LIST_PARAGRAPH123 ul li:before {
         content: "";
-        background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 32 32" fill="rgba(171,123,0,1)"> <path d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.4-.188-2.794-.688-4.094L26.688 13.5c.2.8.313 1.6.313 2.5 0 6.1-4.9 11-11 11S5 22.1 5 16 9.9 5 16 5c3 0 5.694 1.194 7.594 3.094L25 6.688C22.7 4.388 19.5 3 16 3zm11.28 4.28L16 18.563l-4.28-4.28-1.44 1.437 5 5 .72.686.72-.687 12-12-1.44-1.44z"></path> </svg>');
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22rgba(171%2C123%2C0%2C1)%22%3E%20%3Cpath%20d%3D%22M16%203C8.8%203%203%208.8%203%2016s5.8%2013%2013%2013%2013-5.8%2013-13c0-1.4-.188-2.794-.688-4.094L26.688%2013.5c.2.8.313%201.6.313%202.5%200%206.1-4.9%2011-11%2011S5%2022.1%205%2016%209.9%205%2016%205c3%200%205.694%201.194%207.594%203.094L25%206.688C22.7%204.388%2019.5%203%2016%203zm11.28%204.28L16%2018.563l-4.28-4.28-1.44%201.437%205%205%20.72.686.72-.687%2012-12-1.44-1.44z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E");
         width: 19px;
         height: 19px;
         top: 0px;
@@ -2644,10 +2662,6 @@
         left: 0px;
       }
 
-      #BOX348>.ladi-overlay {
-        border-radius: 15px;
-      }
-
       #BOX348>.ladi-box {
         box-shadow: 0px 5px 9px 0px rgba(59, 59, 59, 0.29);
         -webkit-box-shadow: 0px 5px 9px 0px rgba(59, 59, 59, 0.29);
@@ -3263,7 +3277,7 @@
         margin: auto;
       }
 
-      #POPUP379>.ladi-popup {
+      #POPUP379>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -3349,7 +3363,7 @@
         margin: auto;
       }
 
-      #POPUP391>.ladi-popup {
+      #POPUP391>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -3435,7 +3449,7 @@
         margin: auto;
       }
 
-      #POPUP403>.ladi-popup {
+      #POPUP403>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -4721,11 +4735,11 @@
         background-color: rgba(255, 255, 255, 0.95);
       }
 
-      #POPUP476>.ladi-popup {
+      #POPUP476>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s850x750/57b167c9ca57d39c18a1c57c/your-picture-here-1.jpg");
+        background-image: url("https://w.ladicdn.com/s504x445/57b167c9ca57d39c18a1c57c/your-picture-here-1.jpg");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -4783,7 +4797,7 @@
         margin: auto;
       }
 
-      #POPUP486>.ladi-popup {
+      #POPUP486>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -4871,11 +4885,11 @@
         margin: auto;
       }
 
-      #POPUP498>.ladi-popup {
+      #POPUP498>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x650/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s441x313/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -4937,11 +4951,11 @@
         margin: auto;
       }
 
-      #POPUP507>.ladi-popup {
+      #POPUP507>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x600/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s441x292/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -5007,11 +5021,11 @@
         margin: auto;
       }
 
-      #POPUP532>.ladi-popup {
+      #POPUP532>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x600/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s441x292/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -5073,11 +5087,11 @@
         margin: auto;
       }
 
-      #POPUP541>.ladi-popup {
+      #POPUP541>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x600/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s441x292/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -5189,7 +5203,7 @@
         margin: auto;
       }
 
-      #POPUP558>.ladi-popup {
+      #POPUP558>.ladi-popup>.ladi-popup-background {
         background-color: rgb(26, 26, 36);
       }
 
@@ -5243,10 +5257,6 @@
         height: 50px;
         top: 0px;
         left: 0px;
-      }
-
-      #BOX562>.ladi-overlay {
-        border-radius: 50px;
       }
 
       #BOX562>.ladi-box {
@@ -5345,7 +5355,7 @@
         margin: auto;
       }
 
-      #POPUP576>.ladi-popup {
+      #POPUP576>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -5487,7 +5497,7 @@
         margin: auto;
       }
 
-      #POPUP583>.ladi-popup {
+      #POPUP583>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -5565,7 +5575,7 @@
         margin: auto;
       }
 
-      #POPUP589>.ladi-popup {
+      #POPUP589>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -5643,7 +5653,7 @@
         margin: auto;
       }
 
-      #POPUP595>.ladi-popup {
+      #POPUP595>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -5721,7 +5731,7 @@
         margin: auto;
       }
 
-      #POPUP601>.ladi-popup {
+      #POPUP601>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -6016,11 +6026,11 @@
         margin: auto;
       }
 
-      #POPUP620>.ladi-popup {
+      #POPUP620>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x650/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s441x313/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -6046,11 +6056,11 @@
         margin: auto;
       }
 
-      #POPUP627>.ladi-popup {
+      #POPUP627>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x800/5ea141bb5aa6c332a87998fd/untitled-1-20200503102230.png");
+        background-image: url("https://w.ladicdn.com/s420x473/5ea141bb5aa6c332a87998fd/untitled-1-20200503102230.png");
         background-position: center top;
         background-repeat: repeat;
       }
@@ -6110,11 +6120,6 @@
         left: 34.5005px;
       }
 
-      #BOX635>.ladi-overlay {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-      }
-
       #BOX635>.ladi-box {
         border-style: solid;
         border-color: rgb(255, 255, 255);
@@ -6141,11 +6146,6 @@
         height: 77px;
         top: 213.167px;
         left: 34.5px;
-      }
-
-      #BOX637>.ladi-overlay {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
       }
 
       #BOX637>.ladi-box {
@@ -6178,11 +6178,6 @@
         height: 77px;
         top: 290.167px;
         left: 34.5005px;
-      }
-
-      #BOX640>.ladi-overlay {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
       }
 
       #BOX640>.ladi-box {
@@ -6227,11 +6222,6 @@
         height: 77px;
         top: 367.167px;
         left: 34.5005px;
-      }
-
-      #BOX645>.ladi-overlay {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
       }
 
       #BOX645>.ladi-box {
@@ -6715,18 +6705,18 @@
       }
 
       #IMAGE674 {
-        width: 176.958px;
-        height: 49.9496px;
-        top: 353.709px;
-        left: 708.158px;
+        width: 144.574px;
+        height: 75.8942px;
+        top: 340.359px;
+        left: 729.728px;
       }
 
       #IMAGE674>.ladi-image>.ladi-image-background {
-        width: 176.958px;
-        height: 49.9496px;
+        width: 144.574px;
+        height: 75.8942px;
         top: 0px;
         left: 0px;
-        background-image: url("https://w.ladicdn.com/s500x350/5ea141bb5aa6c332a87998fd/coming-soon-20200516183205.png");
+        background-image: url("https://w.ladicdn.com/s450x400/5ea141bb5aa6c332a87998fd/logo-os-tron-20200427065606.png");
       }
 
       #IMAGE675 {
@@ -6761,18 +6751,18 @@
       }
 
       #IMAGE676 {
-        width: 170.386px;
-        height: 48.5323px;
-        top: 635.186px;
-        left: 908.997px;
+        width: 129.911px;
+        height: 73.823px;
+        top: 621.186px;
+        left: 930.684px;
       }
 
       #IMAGE676>.ladi-image>.ladi-image-background {
-        width: 170.386px;
-        height: 48.5323px;
+        width: 129.911px;
+        height: 73.823px;
         top: 0px;
         left: 0px;
-        background-image: url("https://w.ladicdn.com/s500x350/5ea141bb5aa6c332a87998fd/coming-soon-20200516183205.png");
+        background-image: url("https://w.ladicdn.com/s450x400/5ea141bb5aa6c332a87998fd/logo-os-tron-20200427065606.png");
       }
 
       #IMAGE676.ladi-animation>.ladi-image {
@@ -6891,7 +6881,7 @@
         background-repeat: no-repeat;
       }
 
-      #POPUP108>.ladi-popup {
+      #POPUP108>.ladi-popup>.ladi-popup-background {
         background-color: rgb(194, 163, 2);
       }
 
@@ -6975,7 +6965,7 @@
         margin: auto;
       }
 
-      #POPUP119>.ladi-popup {
+      #POPUP119>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -7044,7 +7034,7 @@
 
       #LIST_PARAGRAPH123 ul li:before {
         content: "";
-        background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 32 32" fill="rgba(171,123,0,1)"> <path d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.4-.188-2.794-.688-4.094L26.688 13.5c.2.8.313 1.6.313 2.5 0 6.1-4.9 11-11 11S5 22.1 5 16 9.9 5 16 5c3 0 5.694 1.194 7.594 3.094L25 6.688C22.7 4.388 19.5 3 16 3zm11.28 4.28L16 18.563l-4.28-4.28-1.44 1.437 5 5 .72.686.72-.687 12-12-1.44-1.44z"></path> </svg>');
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22rgba(171%2C123%2C0%2C1)%22%3E%20%3Cpath%20d%3D%22M16%203C8.8%203%203%208.8%203%2016s5.8%2013%2013%2013%2013-5.8%2013-13c0-1.4-.188-2.794-.688-4.094L26.688%2013.5c.2.8.313%201.6.313%202.5%200%206.1-4.9%2011-11%2011S5%2022.1%205%2016%209.9%205%2016%205c3%200%205.694%201.194%207.594%203.094L25%206.688C22.7%204.388%2019.5%203%2016%203zm11.28%204.28L16%2018.563l-4.28-4.28-1.44%201.437%205%205%20.72.686.72-.687%2012-12-1.44-1.44z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E");
         width: 19px;
         height: 19px;
         top: 0px;
@@ -7842,10 +7832,6 @@
         left: 0px;
       }
 
-      #BOX348>.ladi-overlay {
-        border-radius: 15px;
-      }
-
       #BOX348>.ladi-box {
         box-shadow: 0px 5px 9px 0px rgba(59, 59, 59, 0.29);
         -webkit-box-shadow: 0px 5px 9px 0px rgba(59, 59, 59, 0.29);
@@ -8439,7 +8425,7 @@
         margin: auto;
       }
 
-      #POPUP379>.ladi-popup {
+      #POPUP379>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -8525,7 +8511,7 @@
         margin: auto;
       }
 
-      #POPUP391>.ladi-popup {
+      #POPUP391>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -8611,7 +8597,7 @@
         margin: auto;
       }
 
-      #POPUP403>.ladi-popup {
+      #POPUP403>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -9904,11 +9890,11 @@
         background-color: rgba(255, 255, 255, 0.95);
       }
 
-      #POPUP476>.ladi-popup {
+      #POPUP476>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x650/57b167c9ca57d39c18a1c57c/your-picture-here-1.jpg");
+        background-image: url("https://w.ladicdn.com/s420x308/57b167c9ca57d39c18a1c57c/your-picture-here-1.jpg");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -9966,7 +9952,7 @@
         margin: auto;
       }
 
-      #POPUP486>.ladi-popup {
+      #POPUP486>.ladi-popup>.ladi-popup-background {
         background-color: rgb(255, 255, 255);
       }
 
@@ -10054,11 +10040,11 @@
         margin: auto;
       }
 
-      #POPUP498>.ladi-popup {
+      #POPUP498>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x600/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s420x269/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -10120,11 +10106,11 @@
         margin: auto;
       }
 
-      #POPUP507>.ladi-popup {
+      #POPUP507>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x600/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s420x269/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -10190,11 +10176,11 @@
         margin: auto;
       }
 
-      #POPUP532>.ladi-popup {
+      #POPUP532>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x600/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s420x269/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -10256,11 +10242,11 @@
         margin: auto;
       }
 
-      #POPUP541>.ladi-popup {
+      #POPUP541>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x600/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s418x269/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -10372,7 +10358,7 @@
         margin: auto;
       }
 
-      #POPUP558>.ladi-popup {
+      #POPUP558>.ladi-popup>.ladi-popup-background {
         background-color: rgb(26, 26, 36);
       }
 
@@ -10426,10 +10412,6 @@
         height: 50px;
         top: 0px;
         left: 0px;
-      }
-
-      #BOX562>.ladi-overlay {
-        border-radius: 50px;
       }
 
       #BOX562>.ladi-box {
@@ -10528,7 +10510,7 @@
         margin: auto;
       }
 
-      #POPUP576>.ladi-popup {
+      #POPUP576>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -10670,7 +10652,7 @@
         margin: auto;
       }
 
-      #POPUP583>.ladi-popup {
+      #POPUP583>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -10748,7 +10730,7 @@
         margin: auto;
       }
 
-      #POPUP589>.ladi-popup {
+      #POPUP589>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -10826,7 +10808,7 @@
         margin: auto;
       }
 
-      #POPUP595>.ladi-popup {
+      #POPUP595>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -10904,7 +10886,7 @@
         margin: auto;
       }
 
-      #POPUP601>.ladi-popup {
+      #POPUP601>.ladi-popup>.ladi-popup-background {
         background-color: rgb(53, 138, 255);
       }
 
@@ -11199,11 +11181,11 @@
         margin: auto;
       }
 
-      #POPUP620>.ladi-popup {
+      #POPUP620>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x600/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
+        background-image: url("https://w.ladicdn.com/s420x269/5ea141bb5aa6c332a87998fd/01-20200502173548.png");
         background-position: center top;
         background-repeat: no-repeat;
       }
@@ -11229,11 +11211,11 @@
         margin: auto;
       }
 
-      #POPUP627>.ladi-popup {
+      #POPUP627>.ladi-popup>.ladi-popup-background {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s750x800/5ea141bb5aa6c332a87998fd/untitled-1-20200503102230.png");
+        background-image: url("https://w.ladicdn.com/s419x461/5ea141bb5aa6c332a87998fd/untitled-1-20200503102230.png");
         background-position: center top;
         background-repeat: repeat;
       }
@@ -11293,11 +11275,6 @@
         left: 34.5005px;
       }
 
-      #BOX635>.ladi-overlay {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-      }
-
       #BOX635>.ladi-box {
         border-style: solid;
         border-color: rgb(255, 255, 255);
@@ -11324,11 +11301,6 @@
         height: 77px;
         top: 213.167px;
         left: 34.5px;
-      }
-
-      #BOX637>.ladi-overlay {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
       }
 
       #BOX637>.ladi-box {
@@ -11361,11 +11333,6 @@
         height: 77px;
         top: 290.167px;
         left: 34.5005px;
-      }
-
-      #BOX640>.ladi-overlay {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
       }
 
       #BOX640>.ladi-box {
@@ -11410,11 +11377,6 @@
         height: 77px;
         top: 367.167px;
         left: 34.5005px;
-      }
-
-      #BOX645>.ladi-overlay {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
       }
 
       #BOX645>.ladi-box {
@@ -11909,7 +11871,7 @@
         height: 49.9496px;
         top: 0px;
         left: 0px;
-        background-image: url("https://w.ladicdn.com/s500x350/5ea141bb5aa6c332a87998fd/coming-soon-20200516183205.png");
+        background-image: url("https://w.ladicdn.com/s500x350/5ea141bb5aa6c332a87998fd/logo-os-tron-20200427065606.png");
       }
 
       #IMAGE675 {
@@ -11944,18 +11906,18 @@
       }
 
       #IMAGE676 {
-        width: 176.958px;
-        height: 49.9496px;
-        top: 1409.05px;
-        left: 629.072px;
+        width: 141.447px;
+        height: 78.2933px;
+        top: 1394.88px;
+        left: 649.448px;
       }
 
       #IMAGE676>.ladi-image>.ladi-image-background {
-        width: 176.958px;
-        height: 49.9496px;
+        width: 141.447px;
+        height: 78.2933px;
         top: 0px;
         left: 0px;
-        background-image: url("https://w.ladicdn.com/s500x350/5ea141bb5aa6c332a87998fd/coming-soon-20200516183205.png");
+        background-image: url("https://w.ladicdn.com/s450x400/5ea141bb5aa6c332a87998fd/logo-os-tron-20200427065606.png");
       }
 
       #IMAGE676.ladi-animation>.ladi-image {
@@ -12026,7 +11988,7 @@
     .ladi-video-background,
     .ladi-countdown-background,
     .ladi-box,
-    .ladi-frame,
+    .ladi-frame-background,
     .ladi-banner,
     .ladi-form-item-background,
     .ladi-gallery-view-item,
@@ -12046,7 +12008,6 @@
       <div class="ladi-container">
         <div id="BOX419" class="ladi-element">
           <div class='ladi-box'></div>
-          <div class="ladi-overlay"></div>
         </div>
         <div id="IMAGE420" class="ladi-element">
           <div class='ladi-image'>
@@ -12485,7 +12446,6 @@
                 </div>
                 <div id="BOX175" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="HEADLINE176" class="ladi-element">
                   <h3 class='ladi-headline'></h3>
@@ -12524,7 +12484,6 @@
             </div>
             <div id="BOX181" class="ladi-element">
               <div class='ladi-box'></div>
-              <div class="ladi-overlay"></div>
             </div>
           </div>
         </div>
@@ -12587,7 +12546,6 @@
         </div>
         <div id="BOX205" class="ladi-element">
           <div class='ladi-box'></div>
-          <div class="ladi-overlay"></div>
         </div>
         <div data-action="true" id="IMAGE206" class="ladi-element">
           <div class='ladi-image ladi-transition'>
@@ -12596,15 +12554,12 @@
         </div>
         <div id="BOX372" class="ladi-element">
           <div class='ladi-box'></div>
-          <div class="ladi-overlay"></div>
         </div>
         <div id="BOX373" class="ladi-element">
           <div class='ladi-box'></div>
-          <div class="ladi-overlay"></div>
         </div>
         <div id="BOX412" class="ladi-element">
           <div class='ladi-box'></div>
-          <div class="ladi-overlay"></div>
         </div>
         <div data-action="true" id="IMAGE413" class="ladi-element">
           <div class='ladi-image'>
@@ -12643,7 +12598,6 @@
         </div>
         <div id="BOX197" class="ladi-element">
           <div class='ladi-box'></div>
-          <div class="ladi-overlay"></div>
         </div>
       </div>
     </div>
@@ -12664,15 +12618,15 @@
                   <p class='ladi-headline'>Technology&nbsp;</p>
                 </div>
               </div>
-            </a>
-            <div data-action="true" id="BUTTON660" class="ladi-element">
+            </a><a href="https://drive.google.com/file/d/1KCPz1KCCf_dvclNU-B7x27r6mx5P1dBa/view?usp=sharing"
+              target="_blank" id="BUTTON660" class="ladi-element">
               <div class='ladi-button ladi-transition'>
                 <div class="ladi-button-background"></div>
                 <div id="BUTTON_TEXT660" class="ladi-element">
                   <p class='ladi-headline'>FMCG</p>
                 </div>
               </div>
-            </div><a
+            </a><a
               href="https://drive.google.com/file/d/1Wv7gP0XpdnZKFiT3IoNyoAVAcSDk4wqD/view?fbclid=IwAR3iLrzaNpixmDd9jMg4O4BTM5Wmgi8_S_N8jclmsj1c2ZmFVkf_2Nkz0J8"
               target="_blank" id="BUTTON652" class="ladi-element">
               <div class='ladi-button ladi-transition'>
@@ -12681,15 +12635,15 @@
                   <p class='ladi-headline'>Retail</p>
                 </div>
               </div>
-            </a>
-            <div id="BUTTON656" class="ladi-element">
+            </a><a href="https://drive.google.com/file/d/1LQYpbMmH6iwBbYVFqn4nQgax2Q35vjd7/view?usp=sharing"
+              target="_blank" id="BUTTON656" class="ladi-element">
               <div class='ladi-button ladi-transition'>
                 <div class="ladi-button-background"></div>
                 <div id="BUTTON_TEXT656" class="ladi-element">
                   <p class='ladi-headline'>Logistics</p>
                 </div>
               </div>
-            </div><a href="https://drive.google.com/file/d/1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu/view?usp=sharing"
+            </a><a href="https://drive.google.com/file/d/1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu/view?usp=sharing"
               target="_blank" id="BUTTON658" class="ladi-element">
               <div class='ladi-button ladi-transition'>
                 <div class="ladi-button-background"></div>
@@ -12709,13 +12663,13 @@
               <div class='ladi-image ladi-transition'>
                 <div class="ladi-image-background"></div>
               </div>
-            </a>
-            <div id="IMAGE664" class="ladi-element">
+            </a><a href="https://drive.google.com/file/d/1LQYpbMmH6iwBbYVFqn4nQgax2Q35vjd7/view?usp=sharing"
+              target="_blank" id="IMAGE664" class="ladi-element">
               <div class='ladi-image ladi-transition'>
                 <div class="ladi-image-background"></div>
                 <div class="ladi-overlay"></div>
               </div>
-            </div><a href="https://drive.google.com/file/d/1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu/view?usp=sharing"
+            </a><a href="https://drive.google.com/file/d/1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu/view?usp=sharing"
               target="_blank" id="IMAGE665" class="ladi-element">
               <div class='ladi-image ladi-transition'>
                 <div class="ladi-image-background"></div>
@@ -12732,28 +12686,28 @@
               <div class='ladi-image ladi-transition'>
                 <div class="ladi-image-background"></div>
               </div>
-            </a>
-            <div id="IMAGE674" class="ladi-element">
+            </a><a href="https://drive.google.com/file/d/1LQYpbMmH6iwBbYVFqn4nQgax2Q35vjd7/view?usp=sharing"
+              target="_blank" id="IMAGE674" class="ladi-element">
               <div class='ladi-image'>
                 <div class="ladi-image-background"></div>
               </div>
-            </div><a href="https://drive.google.com/file/d/1apuMTwDGF8tBYJtUY6H90xy_jrmcKdku/view?usp=sharing"
+            </a><a href="https://drive.google.com/file/d/1apuMTwDGF8tBYJtUY6H90xy_jrmcKdku/view?usp=sharing"
               target="_blank" id="IMAGE675" class="ladi-element">
               <div class='ladi-image ladi-transition'>
                 <div class="ladi-image-background"></div>
               </div>
-            </a>
-            <div id="IMAGE679" class="ladi-element">
+            </a><a href="https://drive.google.com/file/d/1KCPz1KCCf_dvclNU-B7x27r6mx5P1dBa/view?usp=sharing"
+              target="_blank" id="IMAGE679" class="ladi-element">
               <div class='ladi-image ladi-transition'>
                 <div class="ladi-image-background"></div>
                 <div class="ladi-overlay"></div>
               </div>
-            </div>
-            <div id="IMAGE676" class="ladi-element">
+            </a><a href="https://drive.google.com/file/d/1KCPz1KCCf_dvclNU-B7x27r6mx5P1dBa/view?usp=sharing"
+              target="_blank" id="IMAGE676" class="ladi-element">
               <div class='ladi-image ladi-transition'>
                 <div class="ladi-image-background"></div>
               </div>
-            </div>
+            </a>
             <div id="HEADLINE519" class="ladi-element">
               <h3 class='ladi-headline'>Recap Webinar<br></h3>
             </div>
@@ -12938,7 +12892,8 @@
               </div>
             </div>
             <div id="HEADLINE355" class="ladi-element">
-              <h3 class='ladi-headline'>Đăng kí ngay<span style="color: rgb(204, 172, 2);"> </span><br>để nhận trọn bộ tài liệu từ Orientation Series</h3>
+              <h3 class='ladi-headline'>Đăng kí ngay<span style="color: rgb(204, 172, 2);"> </span><br>để nhận trọn bộ
+                tài liệu từ Orientation Series</h3>
             </div>
           </div>
         </div>
@@ -12957,7 +12912,6 @@
           <div class='ladi-group'>
             <div id="BOX432" class="ladi-element">
               <div class='ladi-box'></div>
-              <div class="ladi-overlay"></div>
             </div>
             <div id="IMAGE433" class="ladi-element">
               <div class='ladi-image'>
@@ -12978,10 +12932,10 @@
       <div class="ladi-container">
         <div id="POPUP108" class="ladi-element">
           <div class='ladi-popup'>
+            <div class="ladi-popup-background"></div>
             <div class="ladi-overlay"></div>
             <div id="BOX109" class="ladi-element">
               <div class='ladi-box'></div>
-              <div class="ladi-overlay"></div>
             </div>
             <div id="LINE110" class="ladi-element">
               <div class='ladi-line'>
@@ -13011,7 +12965,7 @@
         </div>
         <div id="POPUP119" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="IMAGE120" class="ladi-element">
               <div class='ladi-image'>
                 <div class="ladi-image-background"></div>
@@ -13039,12 +12993,11 @@
         </div>
         <div id="POPUP347" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP352" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX348" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="IMAGE349" class="ladi-element">
                   <div class='ladi-image'>
@@ -13064,7 +13017,7 @@
         </div>
         <div id="POPUP379" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="IMAGE380" class="ladi-element">
               <div class='ladi-image'>
                 <div class="ladi-image-background"></div>
@@ -13098,7 +13051,7 @@
         </div>
         <div id="POPUP391" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="IMAGE392" class="ladi-element">
               <div class='ladi-image'>
                 <div class="ladi-image-background"></div>
@@ -13135,7 +13088,7 @@
         </div>
         <div id="POPUP403" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="IMAGE404" class="ladi-element">
               <div class='ladi-image'>
                 <div class="ladi-image-background"></div>
@@ -13171,6 +13124,7 @@
         </div>
         <div id="POPUP476" class="ladi-element">
           <div class='ladi-popup'>
+            <div class="ladi-popup-background"></div>
             <div class="ladi-overlay"></div>
             <div id="IMAGE477" class="ladi-element">
               <div class='ladi-image'>
@@ -13189,7 +13143,7 @@
         </div>
         <div id="POPUP486" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="IMAGE487" class="ladi-element">
               <div class='ladi-image'>
                 <div class="ladi-image-background"></div>
@@ -13199,7 +13153,6 @@
               <div class='ladi-group'>
                 <div id="BOX488" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="HEADLINE489" class="ladi-element">
                   <h3 class='ladi-headline'>Case study</h3>
@@ -13220,12 +13173,11 @@
         </div>
         <div id="POPUP498" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP502" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX499" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="HEADLINE500" class="ladi-element">
                   <h3 class='ladi-headline'>Webinar</h3>
@@ -13247,12 +13199,11 @@
         </div>
         <div id="POPUP507" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP511" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX508" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="HEADLINE509" class="ladi-element">
                   <h3 class='ladi-headline'>Chuỗi bài viết</h3>
@@ -13273,12 +13224,11 @@
         </div>
         <div id="POPUP532" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP536" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX533" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="HEADLINE534" class="ladi-element">
                   <h3 class='ladi-headline'>Case study</h3>
@@ -13299,12 +13249,11 @@
         </div>
         <div id="POPUP541" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP545" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX542" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="HEADLINE543" class="ladi-element">
                   <h3 class='ladi-headline'>Chuỗi podcast</h3>
@@ -13326,18 +13275,18 @@
         </div>
         <div id="POPUP558" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP567" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX559" class="ladi-element">
-                  <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
+                  <div class='ladi-box'>
+                    <div class="ladi-overlay"></div>
+                  </div>
                 </div>
                 <div id="GROUP568" class="ladi-element">
                   <div class='ladi-group'>
                     <div id="BOX560" class="ladi-element">
                       <div class='ladi-box'></div>
-                      <div class="ladi-overlay"></div>
                     </div>
                     <div id="HEADLINE561" class="ladi-element">
                       <h4 class='ladi-headline'>Đăng ký thành công!</h4>
@@ -13348,7 +13297,6 @@
                   <div class='ladi-group'>
                     <div id="BOX562" class="ladi-element">
                       <div class='ladi-box'></div>
-                      <div class="ladi-overlay"></div>
                     </div>
                     <div id="SHAPE563" class="ladi-element">
                       <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
@@ -13380,12 +13328,11 @@
         </div>
         <div id="POPUP576" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP582" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX577" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="LINE578" class="ladi-element">
                   <div class='ladi-line'>
@@ -13418,12 +13365,11 @@
         </div>
         <div id="POPUP583" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP584" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX585" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="LINE586" class="ladi-element">
                   <div class='ladi-line'>
@@ -13453,12 +13399,11 @@
         </div>
         <div id="POPUP589" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP590" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX591" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="LINE592" class="ladi-element">
                   <div class='ladi-line'>
@@ -13488,12 +13433,11 @@
         </div>
         <div id="POPUP595" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP596" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX597" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="LINE598" class="ladi-element">
                   <div class='ladi-line'>
@@ -13521,12 +13465,11 @@
         </div>
         <div id="POPUP601" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP602" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX603" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="LINE604" class="ladi-element">
                   <div class='ladi-line'>
@@ -13555,12 +13498,11 @@
         </div>
         <div id="POPUP620" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="GROUP621" class="ladi-element">
               <div class='ladi-group'>
                 <div id="BOX622" class="ladi-element">
                   <div class='ladi-box'></div>
-                  <div class="ladi-overlay"></div>
                 </div>
                 <div id="HEADLINE623" class="ladi-element">
                   <h3 class='ladi-headline'>Company Orientation</h3>
@@ -13581,7 +13523,7 @@
         </div>
         <div id="POPUP627" class="ladi-element">
           <div class='ladi-popup'>
-            <div class="ladi-overlay"></div>
+            <div class="ladi-popup-background"></div>
             <div id="HEADLINE628" class="ladi-element">
               <h3 class='ladi-headline'>Menu</h3>
             </div>
@@ -13596,27 +13538,22 @@
             </div>
             <div data-action="true" id="BOX635" class="ladi-element">
               <div class='ladi-box'></div>
-              <div class="ladi-overlay"></div>
             </div>
             <div data-action="true" id="BOX636" class="ladi-element">
               <div class='ladi-box'></div>
-              <div class="ladi-overlay"></div>
             </div><a
               href="https://hrc-podcast.buzzsprout.com/?fbclid=IwAR13Y0Emm3UL2qEL4voO_FwbMEkX09irGQskVzTXyuaWJqmLJoDco_nsfAM"
               target="_blank" id="BOX637" class="ladi-element">
               <div class='ladi-box'></div>
-              <div class="ladi-overlay"></div>
             </a><a href="https://www.facebook.com/groups/company.discovery.community" target="_blank" id="BOX640"
               class="ladi-element">
               <div class='ladi-box'></div>
-              <div class="ladi-overlay"></div>
             </a><a href="https://www.facebook.com/groups/company.discovery.community" target="_blank" id="HEADLINE641"
               class="ladi-element">
               <h3 class='ladi-headline'>Group</h3>
             </a><a href="https://drive.google.com/drive/folders/1qc_K3iaMSIrUKNYGGPgxbqrsueHriHbC?usp=sharing"
               target="_blank" id="BOX645" class="ladi-element">
               <div class='ladi-box'></div>
-              <div class="ladi-overlay"></div>
             </a><a href="https://drive.google.com/drive/folders/1qc_K3iaMSIrUKNYGGPgxbqrsueHriHbC?usp=sharing"
               target="_blank" id="HEADLINE646" class="ladi-element">
               <h3 class='ladi-headline'>Tài liệu</h3>
@@ -13629,15 +13566,15 @@
   <div id="backdrop-popup" class="backdrop-popup"></div>
   <div id="lightbox-screen" class="lightbox-screen"></div>
   <script id="script_lazyload"
-    type="text/javascript">(function () { var list_element_lazyload = document.querySelectorAll('.ladi-section-background, .ladi-image-background, .ladi-button-background, .ladi-headline, .ladi-video-background, .ladi-countdown-background, .ladi-box, .ladi-frame, .ladi-banner, .ladi-form-item-background, .ladi-gallery-view-item, .ladi-gallery-control-item, .ladi-spin-lucky-screen, .ladi-spin-lucky-start, .ladi-list-paragraph ul li'); var style_lazyload = document.getElementById('style_lazyload'); for (var i = 0; i < list_element_lazyload.length; i++) { var rect = list_element_lazyload[i].getBoundingClientRect(); if (rect.x == "undefined" || rect.x == undefined || rect.y == "undefined" || rect.y == undefined) { rect.x = rect.left; rect.y = rect.top; } var offset_top = rect.y + window.scrollY; if (offset_top >= window.scrollY + window.innerHeight || window.scrollY >= offset_top + list_element_lazyload[i].offsetHeight) { list_element_lazyload[i].classList.add('ladi-lazyload'); } } style_lazyload.parentElement.removeChild(style_lazyload); var currentScrollY = window.scrollY; var stopLazyload = function (event) { if (event.type == "scroll" && window.scrollY == currentScrollY) { currentScrollY = -1; return; } window.removeEventListener('scroll', stopLazyload); list_element_lazyload = document.getElementsByClassName('ladi-lazyload'); while (list_element_lazyload.length > 0) { list_element_lazyload[0].classList.remove('ladi-lazyload'); } }; window.addEventListener('scroll', stopLazyload); })();</script>
-  <!--[if lt IE 9]><script src="https://w.ladicdn.com/v2/source/html5shiv.min.js?v=1590985316482"></script><script src="https://w.ladicdn.com/v2/source/respond.min.js?v=1590985316482"></script><![endif]-->
+    type="text/javascript">(function () { var list_element_lazyload = document.querySelectorAll('.ladi-section-background, .ladi-image-background, .ladi-button-background, .ladi-headline, .ladi-video-background, .ladi-countdown-background, .ladi-box, .ladi-frame-background, .ladi-banner, .ladi-form-item-background, .ladi-gallery-view-item, .ladi-gallery-control-item, .ladi-spin-lucky-screen, .ladi-spin-lucky-start, .ladi-list-paragraph ul li'); var style_lazyload = document.getElementById('style_lazyload'); for (var i = 0; i < list_element_lazyload.length; i++) { var rect = list_element_lazyload[i].getBoundingClientRect(); if (rect.x == "undefined" || rect.x == undefined || rect.y == "undefined" || rect.y == undefined) { rect.x = rect.left; rect.y = rect.top; } var offset_top = rect.y + window.scrollY; if (offset_top >= window.scrollY + window.innerHeight || window.scrollY >= offset_top + list_element_lazyload[i].offsetHeight) { list_element_lazyload[i].classList.add('ladi-lazyload'); } } style_lazyload.parentElement.removeChild(style_lazyload); var currentScrollY = window.scrollY; var stopLazyload = function (event) { if (event.type == "scroll" && window.scrollY == currentScrollY) { currentScrollY = -1; return; } window.removeEventListener('scroll', stopLazyload); list_element_lazyload = document.getElementsByClassName('ladi-lazyload'); while (list_element_lazyload.length > 0) { list_element_lazyload[0].classList.remove('ladi-lazyload'); } }; window.addEventListener('scroll', stopLazyload); })();</script>
+  <!--[if lt IE 9]><script src="https://w.ladicdn.com/v2/source/html5shiv.min.js?v=1591931704069"></script><script src="https://w.ladicdn.com/v2/source/respond.min.js?v=1591931704069"></script><![endif]-->
   <link
     href="https://fonts.googleapis.com/css?family=Open Sans:bold,regular|Montserrat:bold,regular|Roboto Slab:bold,regular&display=swap"
     rel="stylesheet" type="text/css">
-  <link href="https://w.ladicdn.com/v2/source/ladipage.min.css?v=1590985316482" rel="stylesheet" type="text/css">
-  <script src="https://w.ladicdn.com/v2/source/ladipage.min.js?v=1590985316482" type="text/javascript"></script>
+  <link href="https://w.ladicdn.com/v2/source/ladipage.min.css?v=1591931704069" rel="stylesheet" type="text/css">
+  <script src="https://w.ladicdn.com/v2/source/ladipage.min.js?v=1591931704069" type="text/javascript"></script>
   <script id="script_event_data"
-    type="text/javascript">(function () { var run = function () { if (typeof window.LadiPageScript == "undefined" || window.LadiPageScript == undefined || typeof window.ladi == "undefined" || window.ladi == undefined) { setTimeout(run, 100); return; } window.LadiPageApp = window.LadiPageApp || new window.LadiPageAppV2(); window.LadiPageScript.runtime.ladipage_id = '5ea4703f860ef229c2a7a79c'; window.LadiPageScript.runtime.isMobileOnly = false; window.LadiPageScript.runtime.DOMAIN_SET_COOKIE = ["demopage.me"]; window.LadiPageScript.runtime.DOMAIN_FREE = ["pagedemo.me", "demopage.me", "ladi.me", "pro5.me", "procv.to"]; window.LadiPageScript.runtime.bodyFontSize = 12; window.LadiPageScript.runtime.time_zone = 7; window.LadiPageScript.runtime.eventData = "%7B%22POPUP108%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22VIDEO112%22%3A%7B%22type%22%3A%22video%22%2C%22option.video_value%22%3A%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6dBiul5SnGU%22%2C%22option.video_type%22%3A%22youtube%22%2C%22mobile.option.video_autoplay%22%3Afalse%7D%2C%22POPUP119%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22HEADLINE176%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE195%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE206%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP601%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22COUNTDOWN264%22%3A%7B%22type%22%3A%22countdown%22%2C%22option.countdown_type%22%3A%22endtime%22%2C%22option.countdown_endtime%22%3A1589461200000%7D%2C%22COUNTDOWN_ITEM265%22%3A%7B%22type%22%3A%22countdown_item%22%2C%22option.countdown_item_type%22%3A%22day%22%7D%2C%22COUNTDOWN_ITEM266%22%3A%7B%22type%22%3A%22countdown_item%22%2C%22option.countdown_item_type%22%3A%22hour%22%7D%2C%22COUNTDOWN_ITEM267%22%3A%7B%22type%22%3A%22countdown_item%22%2C%22option.countdown_item_type%22%3A%22minute%22%7D%2C%22COUNTDOWN_ITEM268%22%3A%7B%22type%22%3A%22countdown_item%22%2C%22option.countdown_item_type%22%3A%22seconds%22%7D%2C%22GROUP316%22%3A%7B%22type%22%3A%22group%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE320%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE324%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP583%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE325%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP589%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE327%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP601%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE328%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP595%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE329%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP589%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE330%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP583%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22POPUP347%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22IMAGE357%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP595%22%7D%2C%22desktop.style.animation-name%22%3A%22slideInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22slideInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE358%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP595%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE365%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP576%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22GROUP162%22%3A%7B%22type%22%3A%22group%22%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%7D%2C%22GROUP160%22%3A%7B%22type%22%3A%22group%22%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE142%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP391%22%7D%7D%2C%22BUTTON95%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP391%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22BUTTON93%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP379%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22BUTTON91%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP403%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE370%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP576%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22POPUP379%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP391%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP403%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22GROUP410%22%3A%7B%22type%22%3A%22group%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP403%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE136%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP379%22%7D%7D%2C%22IMAGE413%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP601%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE4%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22BUTTON5%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%2C%22desktop.style.animation-name%22%3A%22bounce%22%2C%22desktop.style.animation-delay%22%3A%222s%22%2C%22mobile.style.animation-name%22%3A%22bounce%22%2C%22mobile.style.animation-delay%22%3A%222s%22%7D%2C%22SECTION417%22%3A%7B%22type%22%3A%22section%22%2C%22desktop.option.sticky%22%3Atrue%2C%22desktop.option.sticky_position%22%3A%22top%22%2C%22desktop.option.sticky_position_top%22%3A%220px%22%2C%22desktop.option.sticky_position_bottom%22%3A%220px%22%2C%22mobile.option.sticky%22%3Atrue%2C%22mobile.option.sticky_position%22%3A%22top%22%2C%22mobile.option.sticky_position_top%22%3A%220px%22%2C%22mobile.option.sticky_position_bottom%22%3A%220px%22%7D%2C%22HEADLINE423%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION1%22%7D%7D%2C%22HEADLINE424%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION11%22%7D%7D%2C%22HEADLINE425%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION156%22%7D%7D%2C%22HEADLINE426%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION443%22%7D%7D%2C%22BUTTON428%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22HEADLINE434%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fwww.facebook.com%2Fhrc.fanpage%2F%22%7D%7D%2C%22HEADLINE435%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22http%3A%2F%2Fhrc.com.vn%2F%22%7D%7D%2C%22HEADLINE442%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fhrc-podcast.buzzsprout.com%2F%3Ffbclid%3DIwAR13Y0Emm3UL2qEL4voO_FwbMEkX09irGQskVzTXyuaWJqmLJoDco_nsfAM%22%7D%7D%2C%22IMAGE445%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE446%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE447%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP507%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE448%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE450%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP498%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE452%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP532%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE453%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP541%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE454%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE455%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE456%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP498%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE457%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP507%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE458%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP532%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE459%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP541%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22SHAPE244%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22SHAPE243%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22SHAPE242%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22SHAPE241%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22HEADLINE235%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE236%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE234%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE224%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22PARAGRAPH222%22%3A%7B%22type%22%3A%22paragraph%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE221%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22POPUP476%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP486%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP498%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP507%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP532%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP541%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22IMAGE546%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fhrc-podcast.buzzsprout.com%2F%3Ffbclid%3DIwAR13Y0Emm3UL2qEL4voO_FwbMEkX09irGQskVzTXyuaWJqmLJoDco_nsfAM%22%7D%7D%2C%22POPUP558%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP576%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP583%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP589%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP595%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP601%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22IMAGE611%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP576%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE613%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP583%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE614%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP589%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE616%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP620%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE618%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP620%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE619%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22POPUP620%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22SHAPE626%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP627%22%7D%7D%2C%22POPUP627%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22BOX635%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION156%22%7D%7D%2C%22BOX636%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION443%22%7D%7D%2C%22BOX637%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fhrc-podcast.buzzsprout.com%2F%3Ffbclid%3DIwAR13Y0Emm3UL2qEL4voO_FwbMEkX09irGQskVzTXyuaWJqmLJoDco_nsfAM%22%7D%7D%2C%22HEADLINE639%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fcompany.discovery.community%22%7D%7D%2C%22BOX640%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fcompany.discovery.community%22%7D%7D%2C%22HEADLINE641%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fcompany.discovery.community%22%7D%7D%2C%22HEADLINE644%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1qc_K3iaMSIrUKNYGGPgxbqrsueHriHbC%3Fusp%3Dsharing%22%7D%7D%2C%22BOX645%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1qc_K3iaMSIrUKNYGGPgxbqrsueHriHbC%3Fusp%3Dsharing%22%7D%7D%2C%22HEADLINE646%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1qc_K3iaMSIrUKNYGGPgxbqrsueHriHbC%3Fusp%3Dsharing%22%7D%7D%2C%22HEADLINE519%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT652%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON652%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1Wv7gP0XpdnZKFiT3IoNyoAVAcSDk4wqD%2Fview%3Ffbclid%3DIwAR3iLrzaNpixmDd9jMg4O4BTM5Wmgi8_S_N8jclmsj1c2ZmFVkf_2Nkz0J8%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT654%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON654%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1apuMTwDGF8tBYJtUY6H90xy_jrmcKdku%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT656%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON656%22%3A%7B%22type%22%3A%22button%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT658%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON658%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT660%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON660%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE662%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1Wv7gP0XpdnZKFiT3IoNyoAVAcSDk4wqD%2Fview%3Ffbclid%3DIwAR3iLrzaNpixmDd9jMg4O4BTM5Wmgi8_S_N8jclmsj1c2ZmFVkf_2Nkz0J8%22%7D%7D%2C%22IMAGE663%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1Wv7gP0XpdnZKFiT3IoNyoAVAcSDk4wqD%2Fview%3Ffbclid%3DIwAR3iLrzaNpixmDd9jMg4O4BTM5Wmgi8_S_N8jclmsj1c2ZmFVkf_2Nkz0J8%22%7D%7D%2C%22IMAGE665%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu%2Fview%3Fusp%3Dsharing%22%7D%7D%2C%22IMAGE666%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1apuMTwDGF8tBYJtUY6H90xy_jrmcKdku%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22slideInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22slideInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE673%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu%2Fview%3Fusp%3Dsharing%22%7D%7D%2C%22IMAGE675%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1apuMTwDGF8tBYJtUY6H90xy_jrmcKdku%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE676%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE679%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%7D"; window.LadiPageScript.run(true); window.LadiPageScript.runEventScroll(); }; run(); })();</script>
+    type="text/javascript">(function () { var run = function () { if (typeof window.LadiPageScript == "undefined" || window.LadiPageScript == undefined || typeof window.ladi == "undefined" || window.ladi == undefined) { setTimeout(run, 100); return; } window.LadiPageApp = window.LadiPageApp || new window.LadiPageAppV2(); window.LadiPageScript.runtime.ladipage_id = '5ea4703f860ef229c2a7a79c'; window.LadiPageScript.runtime.isMobileOnly = false; window.LadiPageScript.runtime.DOMAIN_SET_COOKIE = ["demopage.me"]; window.LadiPageScript.runtime.DOMAIN_FREE = ["pagedemo.me", "demopage.me", "pro5.me", "procv.to", "ladi.me"]; window.LadiPageScript.runtime.bodyFontSize = 12; window.LadiPageScript.runtime.time_zone = 7; window.LadiPageScript.runtime.eventData = "%7B%22POPUP108%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22VIDEO112%22%3A%7B%22type%22%3A%22video%22%2C%22option.video_value%22%3A%22https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6dBiul5SnGU%22%2C%22option.video_type%22%3A%22youtube%22%2C%22mobile.option.video_autoplay%22%3Afalse%7D%2C%22POPUP119%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22HEADLINE176%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE195%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE206%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP601%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22COUNTDOWN264%22%3A%7B%22type%22%3A%22countdown%22%2C%22option.countdown_type%22%3A%22endtime%22%2C%22option.countdown_endtime%22%3A1589461200000%7D%2C%22COUNTDOWN_ITEM265%22%3A%7B%22type%22%3A%22countdown_item%22%2C%22option.countdown_item_type%22%3A%22day%22%7D%2C%22COUNTDOWN_ITEM266%22%3A%7B%22type%22%3A%22countdown_item%22%2C%22option.countdown_item_type%22%3A%22hour%22%7D%2C%22COUNTDOWN_ITEM267%22%3A%7B%22type%22%3A%22countdown_item%22%2C%22option.countdown_item_type%22%3A%22minute%22%7D%2C%22COUNTDOWN_ITEM268%22%3A%7B%22type%22%3A%22countdown_item%22%2C%22option.countdown_item_type%22%3A%22seconds%22%7D%2C%22GROUP316%22%3A%7B%22type%22%3A%22group%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE320%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE324%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP583%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE325%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP589%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE327%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP601%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE328%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP595%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE329%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP589%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE330%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP583%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22POPUP347%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22IMAGE357%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP595%22%7D%2C%22desktop.style.animation-name%22%3A%22slideInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22slideInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE358%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP595%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE365%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP576%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22GROUP162%22%3A%7B%22type%22%3A%22group%22%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%7D%2C%22GROUP160%22%3A%7B%22type%22%3A%22group%22%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE142%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP391%22%7D%7D%2C%22BUTTON95%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP391%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22BUTTON93%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP379%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22BUTTON91%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP403%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE370%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP576%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22POPUP379%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP391%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP403%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22GROUP410%22%3A%7B%22type%22%3A%22group%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP403%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE136%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP379%22%7D%7D%2C%22IMAGE413%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP601%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE4%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22BUTTON5%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%2C%22desktop.style.animation-name%22%3A%22bounce%22%2C%22desktop.style.animation-delay%22%3A%222s%22%2C%22mobile.style.animation-name%22%3A%22bounce%22%2C%22mobile.style.animation-delay%22%3A%222s%22%7D%2C%22SECTION417%22%3A%7B%22type%22%3A%22section%22%2C%22desktop.option.sticky%22%3Atrue%2C%22desktop.option.sticky_position%22%3A%22top%22%2C%22desktop.option.sticky_position_top%22%3A%220px%22%2C%22desktop.option.sticky_position_bottom%22%3A%220px%22%2C%22mobile.option.sticky%22%3Atrue%2C%22mobile.option.sticky_position%22%3A%22top%22%2C%22mobile.option.sticky_position_top%22%3A%220px%22%2C%22mobile.option.sticky_position_bottom%22%3A%220px%22%7D%2C%22HEADLINE423%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION1%22%7D%7D%2C%22HEADLINE424%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION11%22%7D%7D%2C%22HEADLINE425%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION156%22%7D%7D%2C%22HEADLINE426%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION443%22%7D%7D%2C%22BUTTON428%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22HEADLINE434%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fwww.facebook.com%2Fhrc.fanpage%2F%22%7D%7D%2C%22HEADLINE435%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22http%3A%2F%2Fhrc.com.vn%2F%22%7D%7D%2C%22HEADLINE442%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fhrc-podcast.buzzsprout.com%2F%3Ffbclid%3DIwAR13Y0Emm3UL2qEL4voO_FwbMEkX09irGQskVzTXyuaWJqmLJoDco_nsfAM%22%7D%7D%2C%22IMAGE445%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE446%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE447%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP507%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE448%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE450%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP498%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE452%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP532%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE453%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP541%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE454%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE455%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE456%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP498%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE457%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP507%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE458%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP532%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE459%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP541%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22SHAPE244%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22SHAPE243%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22SHAPE242%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22SHAPE241%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION415%22%7D%7D%2C%22HEADLINE235%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE236%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE234%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE224%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22PARAGRAPH222%22%3A%7B%22type%22%3A%22paragraph%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22HEADLINE221%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22POPUP476%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP486%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP498%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP507%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP532%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP541%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22IMAGE546%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fhrc-podcast.buzzsprout.com%2F%3Ffbclid%3DIwAR13Y0Emm3UL2qEL4voO_FwbMEkX09irGQskVzTXyuaWJqmLJoDco_nsfAM%22%7D%7D%2C%22POPUP558%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP576%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP583%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP589%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP595%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22POPUP601%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22IMAGE611%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP576%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE613%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP583%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE614%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP589%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE616%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP620%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22HEADLINE618%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP620%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE619%22%3A%7B%22type%22%3A%22image%22%2C%22desktop.style.animation-name%22%3A%22bounceInLeft%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22bounceInLeft%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22POPUP620%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22SHAPE626%22%3A%7B%22type%22%3A%22shape%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22popup%22%2C%22action%22%3A%22POPUP627%22%7D%7D%2C%22POPUP627%22%3A%7B%22type%22%3A%22popup%22%2C%22desktop.option.popup_position%22%3A%22default%22%2C%22desktop.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%2C%22mobile.option.popup_position%22%3A%22default%22%2C%22mobile.option.popup_backdrop%22%3A%22background-color%3A%20rgba(0%2C%200%2C%200%2C%200.5)%3B%22%7D%2C%22BOX635%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION156%22%7D%7D%2C%22BOX636%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22section%22%2C%22action%22%3A%22SECTION443%22%7D%7D%2C%22BOX637%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fhrc-podcast.buzzsprout.com%2F%3Ffbclid%3DIwAR13Y0Emm3UL2qEL4voO_FwbMEkX09irGQskVzTXyuaWJqmLJoDco_nsfAM%22%7D%7D%2C%22HEADLINE639%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fcompany.discovery.community%22%7D%7D%2C%22BOX640%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fcompany.discovery.community%22%7D%7D%2C%22HEADLINE641%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fcompany.discovery.community%22%7D%7D%2C%22HEADLINE644%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1qc_K3iaMSIrUKNYGGPgxbqrsueHriHbC%3Fusp%3Dsharing%22%7D%7D%2C%22BOX645%22%3A%7B%22type%22%3A%22box%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1qc_K3iaMSIrUKNYGGPgxbqrsueHriHbC%3Fusp%3Dsharing%22%7D%7D%2C%22HEADLINE646%22%3A%7B%22type%22%3A%22headline%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1qc_K3iaMSIrUKNYGGPgxbqrsueHriHbC%3Fusp%3Dsharing%22%7D%7D%2C%22HEADLINE519%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT652%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON652%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1Wv7gP0XpdnZKFiT3IoNyoAVAcSDk4wqD%2Fview%3Ffbclid%3DIwAR3iLrzaNpixmDd9jMg4O4BTM5Wmgi8_S_N8jclmsj1c2ZmFVkf_2Nkz0J8%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT654%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON654%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1apuMTwDGF8tBYJtUY6H90xy_jrmcKdku%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT656%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON656%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1LQYpbMmH6iwBbYVFqn4nQgax2Q35vjd7%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT658%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON658%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON_TEXT660%22%3A%7B%22type%22%3A%22headline%22%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22BUTTON660%22%3A%7B%22type%22%3A%22button%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1KCPz1KCCf_dvclNU-B7x27r6mx5P1dBa%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE662%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1Wv7gP0XpdnZKFiT3IoNyoAVAcSDk4wqD%2Fview%3Ffbclid%3DIwAR3iLrzaNpixmDd9jMg4O4BTM5Wmgi8_S_N8jclmsj1c2ZmFVkf_2Nkz0J8%22%7D%7D%2C%22IMAGE663%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1Wv7gP0XpdnZKFiT3IoNyoAVAcSDk4wqD%2Fview%3Ffbclid%3DIwAR3iLrzaNpixmDd9jMg4O4BTM5Wmgi8_S_N8jclmsj1c2ZmFVkf_2Nkz0J8%22%7D%7D%2C%22IMAGE664%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1LQYpbMmH6iwBbYVFqn4nQgax2Q35vjd7%2Fview%3Fusp%3Dsharing%22%7D%7D%2C%22IMAGE665%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu%2Fview%3Fusp%3Dsharing%22%7D%7D%2C%22IMAGE666%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1apuMTwDGF8tBYJtUY6H90xy_jrmcKdku%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22slideInLeft%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22slideInLeft%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%2C%22IMAGE673%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1W_Z2YBNNGDhutk0xqs0VhkVMHxmUJcLu%2Fview%3Fusp%3Dsharing%22%7D%7D%2C%22IMAGE674%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1LQYpbMmH6iwBbYVFqn4nQgax2Q35vjd7%2Fview%3Fusp%3Dsharing%22%7D%7D%2C%22IMAGE675%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1apuMTwDGF8tBYJtUY6H90xy_jrmcKdku%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE676%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1KCPz1KCCf_dvclNU-B7x27r6mx5P1dBa%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22fadeIn%22%2C%22desktop.style.animation-delay%22%3A%221s%22%2C%22mobile.style.animation-name%22%3A%22fadeIn%22%2C%22mobile.style.animation-delay%22%3A%221s%22%7D%2C%22IMAGE679%22%3A%7B%22type%22%3A%22image%22%2C%22option.data_action%22%3A%7B%22type%22%3A%22link%22%2C%22action%22%3A%22https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1KCPz1KCCf_dvclNU-B7x27r6mx5P1dBa%2Fview%3Fusp%3Dsharing%22%7D%2C%22desktop.style.animation-name%22%3A%22bounceInRight%22%2C%22desktop.style.animation-delay%22%3A%220s%22%2C%22mobile.style.animation-name%22%3A%22bounceInRight%22%2C%22mobile.style.animation-delay%22%3A%220s%22%7D%7D"; window.LadiPageScript.run(true); window.LadiPageScript.runEventScroll(); }; run(); })();</script>
 </body>
 
 </html>
